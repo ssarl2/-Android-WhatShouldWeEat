@@ -14,9 +14,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
+        implements NavigationView.OnNavigationItemSelectedListener{
+
 
 
     @Override
@@ -36,6 +38,17 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        Button startPlayBtn = (Button)findViewById(R.id.StartPlayBtn);
+        startPlayBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,PlayActivity.class);
+                //intent.putExtra("DATA_MAINACTIVITY","메인데이터");
+                startActivity(intent);
+            }
+        });
+
     }
 
     @Override
@@ -78,7 +91,7 @@ public class MainActivity extends AppCompatActivity
 
         if (id == R.id.nav_camera) {
             // Handle the camera action
-            Intent intent = new Intent(this,ResultActivity.class);
+            Intent intent = new Intent(MainActivity.this,ResultActivity.class);
             startActivity(intent);
         } else if (id == R.id.nav_gallery) {
 
