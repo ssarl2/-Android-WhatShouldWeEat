@@ -24,16 +24,19 @@
         android:orientation="horizontal"
         android:gravity="center">
         <Button
+            android:id="@+id/ResultRecipeBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
             android:text="레시피"/>
         <Button
+            android:id="@+id/ResultNearlocationBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
             android:text="근처위치"/>
         <Button
+            android:id="@+id/ResultResearchBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
