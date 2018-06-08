@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.ssarl.a0525ppractice">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -21,8 +23,8 @@
         </activity>
         <activity android:name=".PlayActivity" />
         <activity android:name=".ResultActivity" />
-        <activity android:name=".ResultRecipeActivity"></activity>
+        <activity android:name=".ResultRecipeActivity" />
+        <activity android:name=".ResultNearlocationActivity"></activity>
     </application>
-    <uses-permission android:name="android.permission.INTERNET"/>
 
 </manifest>

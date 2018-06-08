@@ -18,8 +18,8 @@ public class ResultRecipeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_result_recipe);
 
         String foodQuery;
-        foodQuery = "허준녕";
-        webView = (WebView)findViewById(R.id.WebView);
+        foodQuery = "볶음밥";
+        webView = (WebView)findViewById(R.id.WebViewRecipe);
         // 새 창에서 말고 현재창에서 뜨게끔 하는 메소드
         webView.setWebViewClient(new WebViewClient(){
             @Override

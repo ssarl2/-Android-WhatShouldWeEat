@@ -22,7 +22,7 @@ public class ResultActivity extends AppCompatActivity implements View.OnClickLis
         resultResearchBtn = (Button)findViewById(R.id.ResultResearchBtn);
 
         resultRecipeBtn.setOnClickListener(this);
-        //resultNearlocationBtn.setOnClickListener(this);
+        resultNearlocationBtn.setOnClickListener(this);
         resultResearchBtn.setOnClickListener(this);
 
     }
@@ -36,9 +36,12 @@ public class ResultActivity extends AppCompatActivity implements View.OnClickLis
                 startActivity(intent);
                 break;
             }
-            case R.id.ResultNearlocationBtn:
-
+            case R.id.ResultNearlocationBtn: {
+                Intent intent = new Intent(ResultActivity.this, ResultNearlocationActivity.class);
+                intent.putExtra("DATA_RESULT_ACTIVITY", "데이터베이스에서 가져올 음식 이름");
+                startActivity(intent);
                 break;
+            }
             case R.id.ResultResearchBtn: {
                 PlayActivity R_playActivity = (PlayActivity) PlayActivity.playActivity;
                 R_playActivity.finish();

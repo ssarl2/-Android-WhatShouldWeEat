@@ -9,7 +9,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/monitorback"
+        android:background="@drawable/whateat"
         android:gravity="bottom"
         android:orientation="vertical">
 
@@ -17,12 +17,12 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="0.90"
-            android:padding="40dp">
+            android:padding="100dp">
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/monitorfront" />
+                android:background="#FFFFFF" />
         </LinearLayout>
 
         <LinearLayout
