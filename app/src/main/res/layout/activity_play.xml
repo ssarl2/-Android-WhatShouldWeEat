@@ -16,19 +16,23 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="0.90"
-            android:padding="100dp">
+            android:layout_weight="0.88"
+            android:gravity="center">
 
-            <ImageView
+            <TextView
+                android:id="@+id/PlayQuery"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="#FFFFFF" />
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="40dp"
+                android:text="query"/>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="0.08"
+            android:layout_weight="0.1"
             android:orientation="vertical">
 
             <LinearLayout
@@ -41,20 +45,22 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="네" />
-
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="모르겠습니다" />
+                    android:layout_margin="5dp"
+                    android:background="#6FDCC3"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"
+                    android:text="좋아요" />
 
                 <Button
                     android:id="@+id/PlayNoBtn"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="아니오" />
+                    android:layout_margin="5dp"
+                    android:background="#6FDCC3"
+                    android:textSize="20dp"
+                    android:textColor="#FFFFFF"
+                    android:text="싫어요" />
             </LinearLayout>
         </LinearLayout>
 

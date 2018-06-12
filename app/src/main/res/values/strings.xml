@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">이거 타이틀바 색깔 어떻게 없애??!</string>
+    <string name="app_name">오늘 뭐 먹지?</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Android Studio</string>

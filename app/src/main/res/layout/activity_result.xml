@@ -13,40 +13,58 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="0.4"
         android:background="@drawable/resulteat">
 
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="0.2"
         android:orientation="horizontal"
         android:gravity="center">
+        <TextView
+            android:id="@+id/ResultTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="40dp"
+            android:text="결과"
+            android:background="#FFFFFF"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="bottom"
+        android:layout_marginBottom="15dp">
         <Button
             android:id="@+id/ResultRecipeBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="15dp"
+            android:layout_margin="20dp"
+            android:background="#6FDCC3"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
             android:text="레시피"/>
         <Button
             android:id="@+id/ResultNearlocationBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="15dp"
+            android:layout_margin="20dp"
+            android:background="#6FDCC3"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
             android:text="근처위치"/>
         <Button
             android:id="@+id/ResultResearchBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="15dp"
+            android:layout_margin="20dp"
+            android:background="#6FDCC3"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
             android:text="재검색"/>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="0.4">
-
     </LinearLayout>
 
 </FrameLayout>

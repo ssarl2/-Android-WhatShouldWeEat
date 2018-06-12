@@ -17,13 +17,12 @@
 
         </WebView>
         <TextView
+            android:id="@+id/ResultNearlocationTxt"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#FFFFFF"
+            android:layout_height="140dp"
+            android:background="@drawable/resulttop"
             android:gravity="center"
-            android:textSize="102dp"
-            android:text="허준바보"/>
-
+            android:textColor="#FFFFFF"/>
 
 
     </FrameLayout>

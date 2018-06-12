@@ -11,20 +11,29 @@ tools:context=".ResultRecipeActivity">
     android:layout_height="match_parent">
 
 
-
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
     <WebView
         android:id="@+id/WebViewRecipe"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
     </WebView>
-    <TextView
+</LinearLayout>
+    <LinearLayout
+        android:id="@+id/ResultRecipeTopLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#FFFFFF"
-        android:gravity="center"
-        android:textSize="72dp"
-        android:text="허준녕바보"/>
+        android:layout_height="96dp">
+        <TextView
+            android:id="@+id/ResultRecipeTxt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/resulttop"
+            android:gravity="center"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+
 </FrameLayout>
 
 </android.support.constraint.ConstraintLayout>

@@ -3,6 +3,8 @@
     package="com.example.ssarl.a0525ppractice">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -24,7 +26,8 @@
         <activity android:name=".PlayActivity" />
         <activity android:name=".ResultActivity" />
         <activity android:name=".ResultRecipeActivity" />
-        <activity android:name=".ResultNearlocationActivity"></activity>
+        <activity android:name=".ResultNearlocationActivity" />
+        <activity android:name=".ReSearchActivity"></activity>
     </application>
 
 </manifest>
