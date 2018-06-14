@@ -47,7 +47,7 @@ public class FoodRecomendor {
         }
         return "";
     }
-
+//
 
     public void filt(String describe, boolean answer)
     {
